@@ -12,7 +12,8 @@ h3{
 	border-left: 10px
 }
 h4{
-	font-size: 21px;
+	font-size: 15px;
+	/*border-bottom: 1px dashed;*/
 }
 p{
 	/*color: #E6E6E6;*/
