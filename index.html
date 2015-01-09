@@ -1,12 +1,26 @@
 <html>
 <head>
-	<title>E. Zimmermann Portfolio</title>
+	<title>E.V. Zimmermann</title>
+	<script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.js'></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="javascript/stage_slide.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			console.log('hi');
+			$('#stage').click(function() {
+				$( this ).hide();
+			});
+		});
+   	</script>
 </head>
+
 <body>
 	<div id="left_panel">
-		<h3>Eleanor<br>Zimmermann</h3>
+		<h3>E.V.<br>Zimmermann</h3>
 		<h4>Front End Web Developer / Engineer</h4>
 		<p>
 			Specialties:
@@ -15,6 +29,7 @@
 				<li>PHP, CodeIgniter, CakePHP;</li>
 				<li>HTML5, CSS3, SASS;</li>
 				<li>Chrome Extensions / Plugins;</li>
+				<li>Agile Development, Git and Gitflow, SVN;</li>
 			</ul>
 		</p>
 		<h4 id="see_work">
@@ -23,12 +38,10 @@
 	</div>
 
 	<div id="stage">
+		I am a stage!!!!
 	</div>
 
 	
-
-	<!-- poster="polina.jpg" -->
-
 	<video autoplay loop muted id="space_vid">
 		<source src="spaceneedle.mp4" type="video/mp4">
 	</video>
