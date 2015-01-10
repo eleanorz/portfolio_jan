@@ -76,11 +76,17 @@ ul{
 	z-index: -1;
 	content: "";
 }
-.open_stage{
-	margin-right: 0px;
+.open_left_panel{
+	margin-left: 0px;
+}
+.closed_left_panel{
+	margin-left: -325px;
 }
 .closed_stage{
 	margin-right: -325px;
+}
+.open_stage{
+	margin-right: 0px;
 }
 
 video#space_vid {
