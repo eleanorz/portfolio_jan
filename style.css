@@ -36,13 +36,13 @@ ul{
 	height: 100%;
 
 	font-family: 'Open Sans', arial, sans-serif;
-font-kerning: auto;
-font-size: 15px;
-font-stretch: normal;
-font-style: normal;
-font-variant: normal;
-font-variant-ligatures: normal;
-font-weight: normal;
+	font-kerning: auto;
+	font-size: 15px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-variant-ligatures: normal;
+	font-weight: normal;
 }
 #left_panel:after {
 	background-color: gray;
@@ -56,12 +56,16 @@ font-weight: normal;
 	content: "";
 }
 #stage{
-	float: right;
+	/*float: right;*/
+	position: absolute;
+	top: 0;
+	right: 0;
 	color: black;
-	width: 360px;
-	height: 100%;
+	width: 960px;
+	height: 1000px;
+	border: 5px solid red;
 }
-#stage:after {
+#stage:before {
 	background-color: gray;
 	opacity: 0.7;
 	width: 365px;
@@ -71,6 +75,12 @@ font-weight: normal;
 	position: absolute;
 	z-index: -1;
 	content: "";
+}
+.open_stage{
+	margin-right: 0px;
+}
+.closed_stage{
+	margin-right: -325px;
 }
 
 video#space_vid {
