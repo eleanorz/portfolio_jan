@@ -1,0 +1,188 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 16, ../sass/screen.scss */
+body {
+  margin: 0px;
+}
+
+/* line 20, ../sass/screen.scss */
+h3 {
+  color: #E6E6E6;
+  /*-webkit-text-stroke: .5px black;*/
+  font-size: 50px;
+  font-family: Helvetica, Verdana, sans-serif;
+  border-bottom: 0px;
+  border-top: 15px;
+  border-left: 10px;
+}
+
+/* line 29, ../sass/screen.scss */
+h4 {
+  font-size: 15px;
+  /*border-bottom: 1px dashed;*/
+}
+
+/* line 33, ../sass/screen.scss */
+p {
+  /*color: #E6E6E6;*/
+  /*font-family: Garamond;*/
+  font-size: 21px;
+}
+
+/* line 38, ../sass/screen.scss */
+ul {
+  font-size: 20px;
+  list-style-type: square;
+  /*    padding: 0px;
+      margin: 0px;*/
+}
+
+/* line 44, ../sass/screen.scss */
+#see_work {
+  color: orange;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 3px;
+  padding: 7px;
+}
+
+/* line 52, ../sass/screen.scss */
+#see_work:hover {
+  color: #E6E6E6;
+  text-decoration: underline;
+}
+
+/* line 56, ../sass/screen.scss */
+#stage_button {
+  color: orange;
+  width: 40px;
+  border: solid 3px;
+  padding: 7px;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-kerning: auto;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+  font-weight: normal;
+}
+
+/* line 73, ../sass/screen.scss */
+#stage_button:hover {
+  color: #E6E6E6;
+  text-decoration: underline;
+}
+
+/* line 77, ../sass/screen.scss */
+.open_button:before {
+  content: "open";
+}
+
+/* line 80, ../sass/screen.scss */
+.close_button:before {
+  content: "close";
+}
+
+/* line 83, ../sass/screen.scss */
+#left_panel {
+  padding-left: 15px;
+  color: black;
+  width: 360px;
+  height: 100%;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-kerning: auto;
+  font-size: 15px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-variant-ligatures: normal;
+  font-weight: normal;
+}
+
+/* line 98, ../sass/screen.scss */
+.open_left_panel {
+  margin-left: 0px;
+}
+
+/* line 101, ../sass/screen.scss */
+.closed_left_panel {
+  margin-left: -400px;
+  width: 0px;
+}
+
+/* line 105, ../sass/screen.scss */
+.open_left_panel:after {
+  background-color: gray;
+  opacity: 0.6;
+  width: 360px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+/* line 116, ../sass/screen.scss */
+#stage {
+  /*float: right;*/
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+  height: 1000px;
+}
+
+/* line 126, ../sass/screen.scss */
+.open_stage {
+  width: 95%;
+}
+
+/* line 129, ../sass/screen.scss */
+.open_stage:before {
+  background-color: gray;
+  opacity: 0.96;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+/* line 140, ../sass/screen.scss */
+.closed_stage {
+  margin-right: -910px;
+  width: 85%;
+}
+
+/* line 144, ../sass/screen.scss */
+.closed_stage:before {
+  background-color: gray;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+/* line 156, ../sass/screen.scss */
+video#space_vid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
