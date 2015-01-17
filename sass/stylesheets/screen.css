@@ -162,6 +162,11 @@ ul {
 }
 
 /* line 144, ../sass/screen.scss */
+.closed_stage > .portfolio_item {
+  display: none;
+}
+
+/* line 147, ../sass/screen.scss */
 .closed_stage:before {
   background-color: gray;
   opacity: 0.6;
@@ -174,7 +179,13 @@ ul {
   content: "";
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
+.portfolio_text {
+  width: 500px;
+  display: inline-block;
+}
+
+/* line 164, ../sass/screen.scss */
 video#space_vid {
   position: fixed;
   right: 0;

@@ -141,6 +141,9 @@ ul{
 	margin-right: -910px;
 	width: 85%;
 }
+.closed_stage > .portfolio_item{
+	display:none;
+}
 .closed_stage:before {
 	background-color: $transparent-background-color;
 	opacity: $transparent-background-level;
@@ -151,6 +154,11 @@ ul{
 	position: absolute;
 	z-index: -1;
 	content: "";
+}
+.portfolio_text{
+	width: 500px;
+	display: inline-block;
+	// float:left;
 }
 
 video#space_vid {
