@@ -139,13 +139,13 @@ ul {
 
 /* line 126, ../sass/screen.scss */
 .open_stage {
-  width: 95%;
+  width: 100%;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .open_stage:before {
   background-color: gray;
-  opacity: 0.96;
+  opacity: 0.84;
   width: 100%;
   height: 100%;
   top: 0;
@@ -155,18 +155,18 @@ ul {
   content: "";
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .closed_stage {
   margin-right: -910px;
   width: 85%;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .closed_stage > .portfolio_item {
   display: none;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .closed_stage:before {
   background-color: gray;
   opacity: 0.6;
@@ -179,13 +179,21 @@ ul {
   content: "";
 }
 
-/* line 158, ../sass/screen.scss */
-.portfolio_text {
-  width: 500px;
-  display: inline-block;
+/* line 159, ../sass/screen.scss */
+.portfolio_item {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 164, ../sass/screen.scss */
+.portfolio_text {
+  width: 550px;
+  height: 450px;
+  display: inline-block;
+}
+
+/* line 171, ../sass/screen.scss */
 video#space_vid {
   position: fixed;
   right: 0;
