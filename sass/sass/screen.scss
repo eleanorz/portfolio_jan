@@ -9,7 +9,7 @@ $transparent-background-color: gray;
 $transparent-background-level: .6;
 $header-color: #E6E6E6; //off white
 $button-color: orange; //off white
-$left-panel-width: 360px;
+$left-panel-width: 355px;
 $open-stage-width: 95%;
 // $primary-color: #333;
 
@@ -56,7 +56,7 @@ ul{
 #stage_button{
 	color: $button-color;
 	width: 40px;
-	// margin-left: auto;
+	margin-left: 50px;
 	// margin-right: auto;
 	border: solid 3px;
 	padding: 7px;
@@ -84,7 +84,8 @@ ul{
 	padding-left: 15px;
 	color: black;
 	width: $left-panel-width;
-	height: 100%;
+	height: 2000px;
+	position: absolute;
 
 	font-family: 'Open Sans', arial, sans-serif;
 	font-kerning: auto;
@@ -105,7 +106,18 @@ ul{
 .open_left_panel:after {
 	background-color: $transparent-background-color;
 	opacity: $transparent-background-level;
-	width: $left-panel-width;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+	content: "";
+}
+.closed_left_panel:after {
+	background-color: $transparent-background-color;
+	opacity: $transparent-background-level;
+	width: 0%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -120,7 +132,8 @@ ul{
 	right: 0;
 	color: black;
 	// width: $open-stage-width;
-	height: 1000px;
+	// height: 100%;
+	height: 3000px;
 	// border: 5px solid red;
 }
 .open_stage{
@@ -139,12 +152,10 @@ ul{
 	content: "";
 }
 .closed_stage{
-	margin-right: -910px;
+	margin-right: -975px;
 	width: 85%;
 }
-.closed_stage > .portfolio_item{
-	display:none;
-}
+
 .closed_stage:before {
 	background-color: $transparent-background-color;
 	opacity: $transparent-background-level;
@@ -157,8 +168,9 @@ ul{
 	content: "";
 }
 .portfolio_item{
+	// display: none;
 	width: 1100px;
-	margin-left:auto;
+	margin-left:155px;
 	margin-right:auto;
 }
 .portfolio_text{

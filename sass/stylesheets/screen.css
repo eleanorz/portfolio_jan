@@ -59,6 +59,7 @@ ul {
 #stage_button {
   color: orange;
   width: 40px;
+  margin-left: 50px;
   border: solid 3px;
   padding: 7px;
   font-family: 'Open Sans', arial, sans-serif;
@@ -91,8 +92,9 @@ ul {
 #left_panel {
   padding-left: 15px;
   color: black;
-  width: 360px;
-  height: 100%;
+  width: 355px;
+  height: 2000px;
+  position: absolute;
   font-family: 'Open Sans', arial, sans-serif;
   font-kerning: auto;
   font-size: 15px;
@@ -103,22 +105,22 @@ ul {
   font-weight: normal;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 .open_left_panel {
   margin-left: 0px;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .closed_left_panel {
   margin-left: -400px;
   width: 0px;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .open_left_panel:after {
   background-color: gray;
   opacity: 0.6;
-  width: 360px;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -127,22 +129,35 @@ ul {
   content: "";
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
+.closed_left_panel:after {
+  background-color: gray;
+  opacity: 0.6;
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  content: "";
+}
+
+/* line 128, ../sass/screen.scss */
 #stage {
   /*float: right;*/
   position: absolute;
   top: 0;
   right: 0;
   color: black;
-  height: 1000px;
+  height: 3000px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .open_stage {
   width: 100%;
 }
 
-/* line 130, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .open_stage:before {
   background-color: gray;
   opacity: 0.84;
@@ -155,18 +170,13 @@ ul {
   content: "";
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .closed_stage {
-  margin-right: -910px;
+  margin-right: -975px;
   width: 85%;
 }
 
-/* line 145, ../sass/screen.scss */
-.closed_stage > .portfolio_item {
-  display: none;
-}
-
-/* line 148, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .closed_stage:before {
   background-color: gray;
   opacity: 0.6;
@@ -179,21 +189,21 @@ ul {
   content: "";
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .portfolio_item {
   width: 1100px;
-  margin-left: auto;
+  margin-left: 155px;
   margin-right: auto;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 .portfolio_text {
   width: 550px;
   height: 450px;
   display: inline-block;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 video#space_vid {
   position: fixed;
   right: 0;
